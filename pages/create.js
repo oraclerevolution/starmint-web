@@ -279,8 +279,10 @@ function Create() {
 
   const minToken = (network) => {
     if(network == 'polygon'){
+      console.log(network);
       onMintPressed(title,description)
     }else if(network == 'etherium'){
+      console.log(network);
       onMintPressedEth(title,description)
     }
   }

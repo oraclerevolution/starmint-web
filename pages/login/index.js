@@ -88,7 +88,9 @@ function Login() {
           <h1 className='text-5xl font-bold '>Login</h1>
           <div className='flex justify-center items-center gap-2'>
             <h4 className='font-bold'>Not a member ?</h4>
-            <span className='text-blue-400'>Please register</span>
+            <Link href='/login/register'>
+              <span className='text-blue-400'>Please register</span>
+            </Link>
           </div>
 
           <div className='flex flex-col py-1 sm:flex-row gap-4 justify-center '>
