@@ -46,7 +46,7 @@ function RegisterPage() {
   return (
     <div className='md:flex md:flex-row h-screen  overflow-y-hidden'>
       <div className='bg-blue-400 px-20 py-14 md:flex-col hidden md:flex md:w-[50%] w-[100%]'>
-        <div className="flex justify-between  items-center cursor-pointer">
+        <div className="lex justify-between  items-center cursor-pointer">
           <img
             src="/assets/starmit.png"
             alt="Picture of the author"
@@ -54,9 +54,10 @@ function RegisterPage() {
             height={80}
           />
         </div>
-        <div className='h-full flex justify-center items-center w-full  relative mt-20'>
+        <div className='h-full relative mt-20'>
           <img
             src='/assets/multi.png'
+            alt="Picture of the author"
             objectFit= "cover"
             fill
             priority

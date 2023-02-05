@@ -7,7 +7,7 @@ function Privacy() {
     <>
       <NewNav/>
       <div className='px-8 md:px-20 lg:px-32 xl:px-40 2xl:px-52 pt-16 text-[#707A83]'> 
-        <h1 className='text-4xl xl:text-5xl  font-bold text-center text-black  mb-4'>Privacy Policy</h1>
+        <h1 className='xl:text-3xl xl:xl:text-3xl  font-bold text-center mb-4'>Privacy Policy</h1>
         <h1 className='text-xl font-bold text-center mb-4'>Version of 01/09/2022</h1>
         <div className='text-xl flex flex-col gap-4 mb-4'>
           <p>

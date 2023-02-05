@@ -7,7 +7,6 @@ function Terms() {
     <>
       <NewNav/>
       <div className='px-8 md:px-20 lg:px-32 xl:px-40 2xl:px-52 pt-16 text-[#707A83]'>
-        <h1 className='text-4xl xl:text-5xl  font-bold text-center text-black  mb-4'>Terms of use</h1>
         <h1 className='xl:text-3xl  font-bold mb-4'>1. Generals</h1>
         <div className='text-xl'>
           <p>
