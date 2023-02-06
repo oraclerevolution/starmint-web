@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 
 function Dragdrop() {
   const [imageInfo, setImageInfo] = useState();
-  const inputRef = useRef(true);
+  const inputRef = useRef();
 
   const handleDragOver = (event) =>{
     event.preventDefault();

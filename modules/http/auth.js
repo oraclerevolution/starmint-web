@@ -42,15 +42,3 @@ export const loggout = async ()  => {
     sessionStorage.clear();
   }
 }
-
-
-export const addNft = ({file, media_title, description, nft_quantity, blockchain_type}) =>{
-  return apiKit.get('/nft', {
-    file,
-    media_title, 
-    description,
-    nft_quantity,
-    blockchain_type
-  });
-}
-

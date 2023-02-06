@@ -7,7 +7,7 @@ function About() {
     <>
       <NewNav/>
       <div className='px-8 md:px-20 lg:px-32 xl:px-40 2xl:px-52 pt-16 text-[#707A83]'>
-        <h1 className='text-4xl xl:text-5xl  font-bold text-center text-black'>About</h1>
+        <h1 className='text-4xl xl:text-4xl  font-bold text-center'>About</h1>
         <div className='mt-12 flex flex-col text-2xl gap-6'>
           <p>Starmint is an image and video creation app designed for the NFT creators.
             We offer Web3 solutions to allow users to create Video, Photo and Audio NFTs,

@@ -6,13 +6,10 @@ import '../styles/globals.css';
 function MyApp({ Component, pageProps }) {
   return (
     
-    <UserContextProvider >
-      <Layout>
-          <Component {...pageProps} />
-      </Layout>
-    </UserContextProvider>
-    
+    <Layout>
+        <Component {...pageProps} />
+    </Layout>
   )
 }
 
-export default MyApp;
+export default MyApp

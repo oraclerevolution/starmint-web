@@ -1,11 +1,15 @@
 import React, { useContext } from 'react'
+import ein from '../public/assets/1.svg';
+import zwei from '../public/assets/2.svg';
+import drei from '../public/assets/3.svg';
+import sea from '../public/assets/sea.png';
+import binance from '../public/assets/binance.png';
 import Footer from '../components/footer/Footer';
 import Separate from '../components/separate/Separate';
 import { BsArrowRight } from "react-icons/bs";
 import { GiCheckMark } from "react-icons/gi";
 import { userContext } from '../modules/context/userContext';
 import NewNav from '../components/navbar/NewNav';
-import Firewall from '../components/Firewall';
 
 function Sell() {
   const { user } = useContext(userContext);
@@ -15,22 +19,18 @@ function Sell() {
       <section className='flex h-full w-full relative py-16 text-[#707A83]'>
         <div className='px-8 md:px-20 lg:px-32 xl:px-40 2xl:px-52 flex w-full items-center '>
             <div className='flex flex-col w-[100%] h-[100%] md:flex-row  justify-center relative  md:gap-8 gap-10'>
-              <div className='flex w-full min-w-fit flex-col justify-center'>
-                <div className='flex flex-col gap-10'>
-                  <h1 className='text-8xl   font-bold'>Create,</h1>
-                  <h1 className='text-8xl   font-bold'>Share and</h1>
-                  <h1 className='text-8xl   font-bold'>Sell</h1>
-                </div>  
+              <div className='flex w-auto   flex-col justify-center'>
+                  
                 <p className='text-3xl py-6 text-[#707A83]'>List yout NTFs on multiples marketplaces</p>
                 <div className='flex gap-4'>
                   <div className='px-12 py-4  rounded-2xl text-xl bg-[#00FF3B] text-white cursor-pointer flex gap-6 justify-center items-center '><p>Get start</p> <BsArrowRight className='text-2xl' /></div>
                 </div>
               </div>
-              <div className='flex relative  justify-center md:justify-end  w-full h-full items-center'>
+              <div className='flex relative justify-center md:justify-end  w-full h-full items-center'>
                 <div>
                   <div className=' flex flex-col gap-8'>
                     <img
-                      src='/assets/1.svg'
+                      src='/assets/2.svg'
                       alt="Picture of the author"
                       width={500}
                       height={500}
@@ -63,7 +63,7 @@ function Sell() {
                 </div>
               </div>
             </div>
-        </div>
+          </div>
       </section>
       <Separate/>
       <section className='flex h-full w-full relative py-16 text-[#707A83]'>
@@ -147,10 +147,10 @@ function Sell() {
   )
 }
 
-const SellPage = () => (
-  <Firewall>
-    <Sell/>
-  </Firewall>
-);
+// const SellPage = () => (
+//   <Firewall>
+//     <Sell/>
+//   </Firewall>
+// );
 
-export default SellPage;
+export default Sell;

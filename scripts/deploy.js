@@ -7,7 +7,6 @@
 const hre = require("hardhat");
 
 async function main() {
-  
   const Starmint = await hre.ethers.getContractFactory("Starmint");
   const starmint = await Starmint.deploy();
 

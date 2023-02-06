@@ -1,7 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { IoMdMenu, IoMdClose } from "react-icons/io";
+import starmint from '../../public/assets/Starmint.svg';
+import { IoMdMenu } from "react-icons/io";
 import MobileStoreButton from 'react-mobile-store-button'
 import { userContext } from '../../modules/context/userContext';
 import { loggout } from '../../modules/http/auth';
@@ -21,7 +22,7 @@ function Navbar() {
   return (
     <div>
       <div className='w-full h-[100px]  static  flex justify-between items-center  px-8 md:px-20 lg:px-32 xl:px-40 2xl:px-52   border-2 border-b-black'>
-        <div onClick={goBack} className="flex justify-between  items-center cursor-pointer">
+        <div onClick={goBack} className="lex justify-between  items-center cursor-pointer">
             <img
               src="/assets/Starmint.svg"
               alt="Picture of the author"
@@ -30,27 +31,12 @@ function Navbar() {
             />
             {/* <h1 className='  font-bold text-3xl dark:text-white text-black'>Starmint</h1> */}
         </div>
-        {/* <div className=' items-center gap-10  text-black lg:flex hidden font-bold capitalize'>
+        <div className=' items-center gap-10  text-black md:flex hidden font-bold capitalize'>
           <Link className=' cursor-pointer' href={'/create'}>Create</Link>
           <Link className=' cursor-pointer' href={'/sell'}>Sell</Link>
-        </div> */} 
-        <>
-          {user ? (
-          <div className=' items-center text-3xl gap-10  text-black lg:flex hidden font-bold capitalize'>
-            <Link className=' cursor-pointer' href={'/create'}>Create</Link>
-            <Link className=' cursor-pointer' href={'/sell'}>Sell</Link>
-          </div>
-          ): (
-            <></>
-          )
-        }
-        </>
-        <div className=' items-center gap-10  text-black md:flex hidden font-bold capitalize'>
-          
-          {!user ? <Link className=' cursor-pointer text-3xl' href={'/login'}>Login</Link> : 
+          {!user ? <Link className=' cursor-pointer' href={'/login'}>Se connecter</Link> : 
           <>
-          
-            <p className=' cursor-pointer text-3xl' onClick={onLogout} >Logout</p>
+            <Link className=' cursor-pointer' href={'/login'}>Se déconnecter</Link>
           </>}
           <MobileStoreButton
             store="android"
@@ -59,13 +45,7 @@ function Navbar() {
           />
             
         </div>
-        {menu ? (
-          <IoMdClose className='text-3xl flex md:hidden' onClick={handleMenu}/>
-        ): (
-          <IoMdMenu className='text-3xl flex md:hidden' onClick={handleMenu}/>
-        )
-
-        }
+        <IoMdMenu className='text-3xl flex md:hidden' onClick={handleMenu}/>
         
       </div>
 
@@ -76,12 +56,13 @@ function Navbar() {
                 <div className=' gap-6  text-white flex flex-col font-bold capitalize'>
                   <Link className=' cursor-pointer' href={'/create'}>Create</Link>
                   <Link className=' cursor-pointer' href={'/sell'}>Sell</Link>
+                  <Link className=' cursor-pointer' href={'/ode'}>ODE</Link>
                   <button onClick={onLogout} className='px-6 py-2 bg-white text-blue-400 rounded-xl'>Log out</button>
                 </div>
               ) : (
                 <div className=' gap-6  text-white flex flex-col font-bold capitalize'>
-                  <Link className=' cursor-pointer' href={'/login'}>Login</Link>
-                  <Link className=' cursor-pointer' href={'/login/register'}><button className='px-6 py-2 bg-white text-blue-400 rounded-xl'>Register</button></Link>
+                  <Link className=' cursor-pointer' href={'/login'}>Se connecter</Link>
+                  <Link className=' cursor-pointer' href={'/register'}><button className='px-6 py-2 bg-white text-blue-400 rounded-xl'>Inscription</button></Link>
                 </div>
               )}
             </div> 
